@@ -12,9 +12,11 @@ class Model extends MOD {
         $this->endpoint = $endpoint;
     }
 
-    public function save($method)
+    public function save($method = 'post')
     {
-        return Rest::set($method, $this->endpoint , $this->attributes);
+        $res = Rest::set($method, $this->endpoint , $this->attributes);
+        
+        return collection($res);
     }
 
     // public function get()
