@@ -1,0 +1,16 @@
+{
+    "name": "wisdomanthoni/apimodel",
+    "description": "Create Laravel like Model without database wrapping around external restful api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wisdom Anthony",
+            "email": "wizitendo10@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "jenssegers/model": "^1.2"
+    }
+}
